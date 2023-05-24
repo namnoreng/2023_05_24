@@ -5,6 +5,20 @@
 #include <windows.h>
 #include <time.h>
 #include <math.h>
+#include <ctype.h>
+
+//int main(void) {
+//	char c;
+//	printf("%c %c \n", toupper('a'), tolower('B'));
+//	printf("%d %d \n", isupper('A'), islower('A'));
+//
+//	for (c = 'A';c <= 'I';c++) {
+//		printf("%cÀÇ ASCII ÄÚµå = %x \n", c, c);
+//	}
+//	return 0;
+//}
+
+
 
 //void main() {
 //	int num;
