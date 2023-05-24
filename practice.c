@@ -5,20 +5,58 @@
 #include <windows.h>
 #include <conio.h>
 
+//void main() {
+//	int num;
+//	char ch;
+//	srand(time(NULL));
+//	while (!_kbhit()) {
+//		Sleep(1000);
+//			num = rand() % 5;
+//			switch (num) {
+//			case 0: printf("µµ\n");break;
+//			case 1: printf("°³\n");break;
+//			case 2: printf("°É\n");break;
+//			case 3: printf("À·\n");break;
+//			case 4: printf("¸ð\n");break;
+//			default: break;
+//		}
+//	}
+//}
+
 void main() {
-	int num;
-	char ch;
-	srand(time(NULL));
-	while (!_kbhit()) {
-		Sleep(1000);
-			num = rand() % 5;
-			switch (num) {
-			case 0: printf("µµ\n");break;
-			case 1: printf("°³\n");break;
-			case 2: printf("°É\n");break;
-			case 3: printf("À·\n");break;
-			case 4: printf("¸ð\n");break;
+	int human, com;
+	while (1) {
+		scanf("%d", &human);
+		srand(time(NULL));
+		com = rand() % 3 + 1;
+		getchar();
+		if (human == 1) {
+			printf("YOU : °¡À§ ");
+			switch (com) {
+			case 1: printf("COM : °¡À§  ");printf("ºñ±è\n");break;
+			case 2:printf("COM : ¹ÙÀ§  ");printf(" Áü\n");break;
+			case 3:printf("COM : º¸   ");printf("ÀÌ±è\n");break;
 			default: break;
+			}
 		}
+		else if (human == 2) {
+			printf("YOU : ¹ÙÀ§ ");
+			switch (com) {
+			case 1: printf("COM : °¡À§  ");printf("ÀÌ±è\n");break;
+			case 2:printf("COM : ¹ÙÀ§  ");printf("ºñ±è\n");break;
+			case 3:printf("COM : º¸   ");printf(" Áü\n");break;
+			default: break;
+			}
+		}
+		else if (human == 3) {
+			printf("YOU : º¸  ");
+			switch (com) {
+			case 1: printf("COM : °¡À§  ");printf("ÀÌ±è\n");break;
+			case 2:printf("COM : ¹ÙÀ§  ");printf(" Áü\n");break;
+			case 3:printf("COM : º¸   ");printf("ºñ±è\n");break;
+			default: break;
+			}
+		}
+		else printf("ÀçÀÔ·Â\n");
 	}
 }
