@@ -21,23 +21,9 @@
 //	}
 //}
 
-//void main() {
-//	int i, num, result[6] = { 0 }, flag[45] = { 0 };
-//	srand(time(NULL));
-//	for (i = 0;i < 6;i++) {
-//		num = rand() % 45;
-//		if (flag[num] == 1) {
-//			i--;
-//		}
-//		else {
-//			result[i] = num;
-//			flag[num] = 1;
-//		}
-//	}
-//	for (i = 0;i < 6;i++) {
-//		printf("%5d", result[i] + 1);
-//	}
-//}
+void main() {
+	lotto();
+}
 
 //void main() {
 //	printf("%.1f %.1f %.1f \n",pow(2,2),pow(2,3),pow(2,4));
