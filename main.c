@@ -9,6 +9,37 @@
 #define PI 3.141592
 
 //void main() {
+//	int i, num;
+//	srand(time(NULL));
+//	while (1) {
+//		for (i = 1;i < 7;i++) {
+//			num = rand() % 45 + 1;
+//			printf("%5d", num);
+//		}
+//		printf("\n");
+//		Sleep(1000);
+//	}
+//}
+
+//void main() {
+//	int i, num, result[6] = { 0 }, flag[45] = { 0 };
+//	srand(time(NULL));
+//	for (i = 0;i < 6;i++) {
+//		num = rand() % 45;
+//		if (flag[num] == 1) {
+//			i--;
+//		}
+//		else {
+//			result[i] = num;
+//			flag[num] = 1;
+//		}
+//	}
+//	for (i = 0;i < 6;i++) {
+//		printf("%5d", result[i] + 1);
+//	}
+//}
+
+//void main() {
 //	printf("%.1f %.1f %.1f \n",pow(2,2),pow(2,3),pow(2,4));
 //	printf("abs(-10) = %d \n",abs(-10));
 //	printf("sqrt(81) = %.1f \n",sqrt(81.0));
